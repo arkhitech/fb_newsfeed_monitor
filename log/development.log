@@ -1,0 +1,3511 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 13:30:02 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 14:42:20 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-11-01 14:42:23 +0500
+Processing by Rails::InfoController#properties as */*
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/railties-4.0.0/lib/rails/templates/rails/info/properties.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 19.1ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 14:50:39 +0500
+Processing by SearchPhrasesController#index as HTML
+  Rendered search_phrases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1496ms (Views: 1494.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 14:50:41 +0500
+  [1m[36m (93.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (75.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSearchPhrases (20131101095215)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "search_phrases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "keyword" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131101095215"]]
+  [1m[36m (79.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  Rendered search_phrases/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 14:59:03 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 14:59:05 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:06:53 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.4ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:06:54 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:06:59 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:07:19 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:10:42 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:10:43 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:10:44 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (4.5ms)
+  Rendered search_phrases/new.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `model_name' for ActiveRecord::Relation::ActiveRecord_Relation_SearchPhrase:Class):
+    1: <%= form_for @keywords do |f| %>
+    2:   <p>
+    3:     <%= f.label :keyword %><br>
+    4:     <%= f.text_field :keyword %>
+  app/views/search_phrases/_form.html.erb:1:in `_app_views_search_phrases__form_html_erb___450077263273449558_70063432845440'
+  app/views/search_phrases/new.html.erb:3:in `_app_views_search_phrases_new_html_erb__3827869872364436435_70063432743440'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.2ms)
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:10:44 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (1.6ms)
+  Rendered search_phrases/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `model_name' for ActiveRecord::Relation::ActiveRecord_Relation_SearchPhrase:Class):
+    1: <%= form_for @keywords do |f| %>
+    2:   <p>
+    3:     <%= f.label :keyword %><br>
+    4:     <%= f.text_field :keyword %>
+  app/views/search_phrases/_form.html.erb:1:in `_app_views_search_phrases__form_html_erb___450077263273449558_12925720'
+  app/views/search_phrases/new.html.erb:3:in `_app_views_search_phrases_new_html_erb__3827869872364436435_12840520'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:11:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:11:41 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:11:42 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (105.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (109.2ms)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:11:52 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (2.9ms)
+  Rendered search_phrases/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.3ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:13:08 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:13:09 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (58.1ms)
+  Rendered search_phrases/new.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:13:15 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/application_controller.rb:12:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:14:15 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:14:16 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:14:17 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (58.8ms)
+  Rendered search_phrases/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:14:19 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/search_phrases_controller.rb:12:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:17:27 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 01 Nov 2013 10:17:27 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:17:27 UTC +00:00]]
+  [1m[35m (102.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases/1
+Completed 302 Found in 142ms (ActiveRecord: 118.2ms)
+
+
+Started GET "/search_phrases/1" for 127.0.0.1 at 2013-11-01 15:17:27 +0500
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchPhrasesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__407579309347540870__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:17:33 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (No route matches {:controller=>"search_phrases", :action=>"edit"} missing required keys: [:id]):
+    13:     <tr>
+    14:       <td>keywords.keyword</td>
+    15:       <td>
+    16:           <%= link_to 'Edit', edit_search_phrase_path %>
+    17:           <%= link_to 'Delete', search_phrase_path,
+    18:                     method: :delete, data: { confirm: 'Are you sure?' } %>
+    19:       </td>
+  app/views/search_phrases/index.html.erb:16:in `block in _app_views_search_phrases_index_html_erb__3370082896134367905_70343012600100'
+  app/views/search_phrases/index.html.erb:12:in `_app_views_search_phrases_index_html_erb__3370082896134367905_70343012600100'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.5ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:18:31 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:20:20 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:21 +0500
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:20:36 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (43.4ms)
+  Rendered search_phrases/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:20:39 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:20:39 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:20:39 UTC +00:00]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases/2
+Completed 302 Found in 193ms (ActiveRecord: 157.8ms)
+
+
+Started GET "/search_phrases/2" for 127.0.0.1 at 2013-11-01 15:20:39 +0500
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchPhrasesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__3065901097184250128__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:20:43 +0500
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:22:15 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 106ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:16 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:22:17 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (2.9ms)
+  Rendered search_phrases/new.html.erb within layouts/application (37.7ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @keywords do |f| %>
+    2:   <p>
+    3:     <%= f.label :keyword %><br>
+    4:     <%= f.text_field :keyword %>
+  app/views/search_phrases/_form.html.erb:1:in `_app_views_search_phrases__form_html_erb___170520454548010563_19396060'
+  app/views/search_phrases/new.html.erb:3:in `_app_views_search_phrases_new_html_erb___2685111841408314897_70326432586900'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:22:17 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (1.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @keywords do |f| %>
+    2:   <p>
+    3:     <%= f.label :keyword %><br>
+    4:     <%= f.text_field :keyword %>
+  app/views/search_phrases/_form.html.erb:1:in `_app_views_search_phrases__form_html_erb___170520454548010563_34651500'
+  app/views/search_phrases/new.html.erb:3:in `_app_views_search_phrases_new_html_erb___2685111841408314897_34532420'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 105ms (Views: 102.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:34 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:22:35 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (47.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:22:40 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:22:40 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:22:40 UTC +00:00]]
+  [1m[36m (106.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases/3
+Completed 302 Found in 115ms (ActiveRecord: 110.6ms)
+
+
+Started GET "/search_phrases/3" for 127.0.0.1 at 2013-11-01 15:22:40 +0500
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchPhrasesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4138395008027718650__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.3ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:22:43 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:23:57 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 108ms (Views: 104.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:23:58 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:23:59 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (43.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:24:01 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:24:01 UTC +00:00]]
+  [1m[36m (215.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 223ms (ActiveRecord: 219.1ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:24:01 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:25:08 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:09 +0500
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:25:52 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:53 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:25:54 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (44.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"a"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:25:56 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:25:56 UTC +00:00]]
+  [1m[36m (131.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 139ms (ActiveRecord: 134.8ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:25:56 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:25:58 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (3.0ms)
+  Rendered search_phrases/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"a"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:26:02 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:26:02 UTC +00:00]]
+  [1m[36m (112.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 115ms (ActiveRecord: 113.0ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:26:02 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:27:22 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:23 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:27:24 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (44.0ms)
+  Rendered search_phrases/new.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:27:26 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "search_phrases" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Fri, 01 Nov 2013 10:27:26 UTC +00:00], ["updated_at", Fri, 01 Nov 2013 10:27:26 UTC +00:00]]
+  [1m[36m (149.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 157ms (ActiveRecord: 153.0ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:27 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:27:41 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:27:42 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (44.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:27:43 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/search_phrases_controller.rb:12:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:10 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:28:11 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (50.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:28:13 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "search_phrases" ("created_at", "keyword", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 01 Nov 2013 10:28:13 UTC +00:00], ["keyword", "Abuzar"], ["updated_at", Fri, 01 Nov 2013 10:28:13 UTC +00:00]]
+  [1m[36m (136.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 145ms (ActiveRecord: 140.7ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:28:14 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:20 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:21 +0500
+
+
+Started DELETE "/search_phrases/1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"1"}
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mDELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?[0m  [["id", 1]]
+  [1m[35m (76.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 85ms (ActiveRecord: 80.0ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:23 +0500
+
+
+Started DELETE "/search_phrases/2" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"2"}
+  [1m[35mSearchPhrase Load (0.1ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?  [["id", 2]]
+  [1m[36m (172.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 177ms (ActiveRecord: 173.0ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:24 +0500
+
+
+Started DELETE "/search_phrases/3" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"3"}
+  [1m[36mSearchPhrase Load (0.1ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?[0m  [["id", 3]]
+  [1m[35m (84.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 87ms (ActiveRecord: 85.0ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:26 +0500
+
+
+Started DELETE "/search_phrases/4" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"4"}
+  [1m[35mSearchPhrase Load (0.1ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?  [["id", 4]]
+  [1m[36m (68.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 71ms (ActiveRecord: 68.5ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:28 +0500
+
+
+Started DELETE "/search_phrases/5" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"5"}
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?[0m  [["id", 5]]
+  [1m[35m (63.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 66ms (ActiveRecord: 63.7ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:30 +0500
+
+
+Started DELETE "/search_phrases/6" for 127.0.0.1 at 2013-11-01 15:29:31 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"6"}
+  [1m[35mSearchPhrase Load (0.1ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?  [["id", 6]]
+  [1m[36m (116.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 120ms (ActiveRecord: 116.6ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:31 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:32 +0500
+
+
+Started DELETE "/search_phrases/7" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"7"}
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?[0m  [["id", 7]]
+  [1m[35m (97.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 100ms (ActiveRecord: 98.1ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:29:33 +0500
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 106ms (Views: 102.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:34:06 +0500
+
+
+Started GET "/search_phrases/8/edit" for 127.0.0.1 at 2013-11-01 15:34:08 +0500
+Processing by SearchPhrasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered search_phrases/_form.html.erb (43.1ms)
+  Rendered search_phrases/edit.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/search_phrases/8" for 127.0.0.1 at 2013-11-01 15:34:13 +0500
+
+AbstractController::ActionNotFound (The action 'update' could not be found for SearchPhrasesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__683061446603312139__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 105ms (Views: 102.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:25 +0500
+
+
+Started GET "/search_phrases/8/edit" for 127.0.0.1 at 2013-11-01 15:35:26 +0500
+Processing by SearchPhrasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered search_phrases/_form.html.erb (44.0ms)
+  Rendered search_phrases/edit.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/search_phrases/8" for 127.0.0.1 at 2013-11-01 15:35:31 +0500
+Processing by SearchPhrasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar Hasan"}, "commit"=>"Update Search phrase", "id"=>"8"}
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  UPDATE "search_phrases" SET "keyword" = ?, "updated_at" = ? WHERE "search_phrases"."id" = 8  [["keyword", "Abuzar Hasan"], ["updated_at", Fri, 01 Nov 2013 10:35:31 UTC +00:00]]
+  [1m[36m (178.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases/8
+Completed 302 Found in 188ms (ActiveRecord: 181.9ms)
+
+
+Started GET "/search_phrases/8" for 127.0.0.1 at 2013-11-01 15:35:31 +0500
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchPhrasesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__3521398078204753138__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:35:58 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 106ms (Views: 103.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:35:59 +0500
+
+
+Started GET "/search_phrases/8/edit" for 127.0.0.1 at 2013-11-01 15:36:01 +0500
+Processing by SearchPhrasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered search_phrases/_form.html.erb (44.2ms)
+  Rendered search_phrases/edit.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/search_phrases/8" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+Processing by SearchPhrasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Update Search phrase", "id"=>"8"}
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  UPDATE "search_phrases" SET "keyword" = ?, "updated_at" = ? WHERE "search_phrases"."id" = 8  [["keyword", "Abuzar"], ["updated_at", Fri, 01 Nov 2013 10:36:04 UTC +00:00]]
+  [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 133ms (ActiveRecord: 127.7ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:36:04 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 108ms (Views: 104.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:40 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:42:42 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:42:45 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (14.4ms)
+  Rendered search_phrases/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:42:46 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template search_phrases/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/arkhitech/Desktop/fb_newsfeed_monitor/fb_newsfeed_monitor/newsfeed/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:393:in `_run__3127959024680669751__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4550727339262708869__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 107ms (Views: 103.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:45:44 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:45:46 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (45.9ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:45:47 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template search_phrases/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/arkhitech/Desktop/fb_newsfeed_monitor/fb_newsfeed_monitor/newsfeed/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:393:in `_run__2235752843453497001__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1031902172414948973__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/arkhitech/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:48:37 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:38 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:48:39 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (45.6ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_form.html.erb (3.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:40 +0500
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:48:41 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_form.html.erb (2.4ms)
+  Rendered search_phrases/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:48:42 +0500
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:49:27 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered search_phrases/_form.html.erb (6.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 150ms (Views: 71.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:28 +0500
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered search_phrases/_form.html.erb (2.5ms)
+  Rendered search_phrases/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:36 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:39 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:49:40 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (3.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_form.html.erb (2.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:42 +0500
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Hasan"}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "search_phrases" ("created_at", "keyword", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 01 Nov 2013 10:49:47 UTC +00:00], ["keyword", "Hasan"], ["updated_at", Fri, 01 Nov 2013 10:49:47 UTC +00:00]]
+  [1m[36m (124.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 132ms (ActiveRecord: 127.8ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:49:47 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 15:51:09 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 179ms (Views: 175.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:51:10 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_form.html.erb (47.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:51:11 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template search_phrases/error, application/error with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/arkhitech/Desktop/fb_newsfeed_monitor/fb_newsfeed_monitor/newsfeed/app/views"
+):
+  app/controllers/search_phrases_controller.rb:17:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.3ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 110ms (Views: 105.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:52:50 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:52:52 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (33.0ms)
+  Rendered search_phrases/_form.html.erb (11.8ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:52:53 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Create Search phrase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template search_phrases/error, application/error with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/arkhitech/Desktop/fb_newsfeed_monitor/fb_newsfeed_monitor/newsfeed/app/views"
+):
+  app/controllers/search_phrases_controller.rb:17:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:55:56 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:55:57 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (36.3ms)
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (12.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:55:59 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template search_phrases/error, application/error with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/arkhitech/Desktop/fb_newsfeed_monitor/fb_newsfeed_monitor/newsfeed/app/views"
+):
+  app/controllers/search_phrases_controller.rb:17:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:43 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:57:45 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (33.4ms)
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (11.5ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.3ms)
+  Rendered search_phrases/_error.html.erb (0.9ms)
+  Rendered search_phrases/_form.html.erb (5.1ms)
+  Rendered search_phrases/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:57:46 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:25 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:58:26 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (33.6ms)
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (11.5ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.3ms)
+  Rendered search_phrases/_error.html.erb (0.7ms)
+  Rendered search_phrases/_form.html.erb (4.2ms)
+  Rendered search_phrases/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:58:27 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 15:59:50 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.3ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:50 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:51 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (36.6ms)
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (11.5ms)
+  Rendered search_phrases/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.6ms)
+  Rendered search_phrases/_error.html.erb (0.9ms)
+  Rendered search_phrases/_form.html.erb (5.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 15:59:52 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 106ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:09 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:00:11 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (37.0ms)
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (15.0ms)
+  Rendered search_phrases/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.4ms)
+  Rendered search_phrases/_error.html.erb (0.8ms)
+  Rendered search_phrases/_form.html.erb (4.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:00:12 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:01:32 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:04:28 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (2.3ms)
+  Rendered search_phrases/_form.html.erb (14.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"FAST"}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (55.3ms)[0m  INSERT INTO "search_phrases" ("created_at", "keyword", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 01 Nov 2013 11:04:34 UTC +00:00], ["keyword", "FAST"], ["updated_at", Fri, 01 Nov 2013 11:04:34 UTC +00:00]]
+  [1m[36m (177.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 238ms (ActiveRecord: 232.9ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:34 +0500
+
+
+Started DELETE "/search_phrases/10" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"10"}
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?[0m  [["id", 10]]
+  [1m[35m (85.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 90ms (ActiveRecord: 86.3ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:39 +0500
+
+
+Started GET "/search_phrases/9/edit" for 127.0.0.1 at 2013-11-01 16:04:40 +0500
+Processing by SearchPhrasesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mSearchPhrase Load (0.1ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (3.8ms)
+  Rendered search_phrases/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/search_phrases/9" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+Processing by SearchPhrasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Hasan1"}, "commit"=>"Add", "id"=>"9"}
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "search_phrases" SET "keyword" = ?, "updated_at" = ? WHERE "search_phrases"."id" = 9[0m  [["keyword", "Hasan1"], ["updated_at", Fri, 01 Nov 2013 11:04:44 UTC +00:00]]
+  [1m[35m (182.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 188ms (ActiveRecord: 183.5ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:44 +0500
+
+
+Started GET "/search_phrases/9/edit" for 127.0.0.1 at 2013-11-01 16:04:46 +0500
+Processing by SearchPhrasesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mSearchPhrase Load (0.1ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (3.3ms)
+  Rendered search_phrases/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/search_phrases/9" for 127.0.0.1 at 2013-11-01 16:04:48 +0500
+Processing by SearchPhrasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Hasan"}, "commit"=>"Add", "id"=>"9"}
+  [1m[36mSearchPhrase Load (0.1ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "search_phrases" SET "keyword" = ?, "updated_at" = ? WHERE "search_phrases"."id" = 9[0m  [["keyword", "Hasan"], ["updated_at", Fri, 01 Nov 2013 11:04:48 UTC +00:00]]
+  [1m[35m (122.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 127ms (ActiveRecord: 123.4ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:49 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:04:50 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (0.1ms)
+  Rendered search_phrases/_form.html.erb (3.6ms)
+  Rendered search_phrases/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered search_phrases/_error.html.erb (1.4ms)
+  Rendered search_phrases/_form.html.erb (5.1ms)
+  Rendered search_phrases/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:04:51 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:01 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:05:30 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:05:31 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (0.6ms)
+  Rendered search_phrases/_form.html.erb (45.8ms)
+  Rendered search_phrases/new.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.3ms)
+  Rendered search_phrases/_form.html.erb (5.3ms)
+  Rendered search_phrases/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:05:32 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:21 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:06:22 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (0.6ms)
+  Rendered search_phrases/_form.html.erb (48.0ms)
+  Rendered search_phrases/new.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>""}, "commit"=>"Add"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered search_phrases/_error.html.erb (1.2ms)
+  Rendered search_phrases/_form.html.erb (4.8ms)
+  Rendered search_phrases/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:06:23 +0500
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:22:03 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36mSearchPhrase Load (0.3ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:22:03 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:22:04 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "search_phrases"
+  [1m[36mSearchPhrase Load (0.2ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:36 +0500
+
+
+Started DELETE "/search_phrases/8" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"8"}
+  [1m[35mSearchPhrase Load (0.3ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  DELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?  [["id", 8]]
+  [1m[36m (49.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 57ms (ActiveRecord: 52.4ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "search_phrases"
+  [1m[36mSearchPhrase Load (0.1ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:39 +0500
+
+
+Started DELETE "/search_phrases/9" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+Processing by SearchPhrasesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "id"=>"9"}
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases" WHERE "search_phrases"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "search_phrases" WHERE "search_phrases"."id" = ?  [["id", 9]]
+  [1m[36m (76.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 80ms (ActiveRecord: 76.9ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "search_phrases"
+  [1m[36mSearchPhrase Load (0.1ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:41 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 16:24:43 +0500
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (0.6ms)
+  Rendered search_phrases/_form.html.erb (13.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 16:24:46 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Abuzar"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (12.6ms)[0m  [1mINSERT INTO "search_phrases" ("created_at", "keyword", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 01 Nov 2013 11:24:46 UTC +00:00], ["keyword", "Abuzar"], ["updated_at", Fri, 01 Nov 2013 11:24:46 UTC +00:00]]
+  [1m[35m (113.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/search_phrases
+Completed 302 Found in 131ms (ActiveRecord: 126.1ms)
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:24:46 +0500
+Processing by SearchPhrasesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "search_phrases"[0m
+  [1m[35mSearchPhrase Load (0.2ms)[0m  SELECT "search_phrases".* FROM "search_phrases"
+  Rendered search_phrases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:24:47 +0500
+
+
+Started GET "/search_phrases" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "search_phrases"
+  [1m[36mSearchPhrase Load (0.1ms)[0m  [1mSELECT "search_phrases".* FROM "search_phrases"[0m
+  Rendered search_phrases/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 108ms (Views: 104.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/search_phrases.css?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/search_phrases.js?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 16:36:18 +0500
+
+
+Started GET "/search_phrases/new" for 127.0.0.1 at 2013-11-01 17:08:55 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchPhrasesController#new as HTML
+  Rendered search_phrases/_error.html.erb (0.6ms)
+  Rendered search_phrases/_form.html.erb (63.7ms)
+  Rendered search_phrases/new.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 175ms (Views: 170.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/search_phrases" for 127.0.0.1 at 2013-11-01 17:09:00 +0500
+Processing by SearchPhrasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4GB7pL+n7iEQj9+4LrnnxxNr26egk7zYChIEkM+VcG0=", "search_phrase"=>{"keyword"=>"Hasan"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "search_phrases" ("created_at", "keyword", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 01 Nov 2013 12:09:00 UTC +00:00], ["keyword", "Hasan"], ["updated_at", Fri, 01 Nov 2013 12:09:00 UTC +00:00]]
+  [1m[35m (168.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 177ms
+
+NameError (uninitialized constant SearchPhrasesController::UserMailer):
+  app/controllers/search_phrases_controller.rb:14:in `create'
+
+
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/arkhitech/.rvm/gems/ruby-2.0.0-p247@railstutorial_rails_4_0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
