@@ -1,0 +1,14 @@
+<!-- here, 'User will be replaced by the current logged in user e.g. @user.id OR @user.name' -->
+    
+Welcome to Facebook Newsfeed Monitor, <%= @user.name %>
+      
+You saved following Search Phrase(s)
+<% keywords = SearchPhrase.where(user_id: @user.id) %>
+    
+<% keywords.each do |keyword| %>
+  - <%= keyword.keyword %> <br/>
+<% end %>
+    
+Following are the link(s) related to above Search Phrase(s)
+  
+<!-- this area will contain the code to display all the links from FQL query result -->

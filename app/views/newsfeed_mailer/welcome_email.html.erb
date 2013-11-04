@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    
+    <!-- here, 'User will be replaced by the current logged in user e.g. @user.id OR @user.name' -->
+    
+    <h1> Welcome to Facebook Newsfeed Monitor, <%= @user.name %> </h1>
+      
+    <h3> You saved following Search Phrase(s) </h3>
+    <% keywords = SearchPhrase.where(user_id: @user.id) %>
+    
+    <% keywords.each do |keyword| %>
+      - <%= keyword.keyword %> <br/>
+    <% end %>
+    
+    <h3> Following are the link(s) related to above Search Phrase(s) </h3>
+    
+    <!-- this area will contain the code to display all the links from FQL query result -->
+
+  </body>
+</html>

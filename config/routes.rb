@@ -9,6 +9,7 @@ Newsfeed::Application.routes.draw do
   
   root :to => "users#welcome"
   resources :users
+  resources :search_phrases
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

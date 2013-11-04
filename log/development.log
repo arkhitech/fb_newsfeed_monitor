@@ -15771,3 +15771,10 @@ Started GET "/assets/turbolinks.js?body=1" for 192.168.1.1 at 2013-11-04 11:55:3
 
 
 Started GET "/assets/application.js?body=1" for 192.168.1.1 at 2013-11-04 11:55:35 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSearchPhrases (20131101095215)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "search_phrases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "keyword" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131101095215"]]
+  [1m[36m (179.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
