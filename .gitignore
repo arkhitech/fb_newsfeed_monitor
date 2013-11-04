@@ -20,4 +20,5 @@ doc/
 *~
 config/database.yml
 logs/*log
-/nbproject/private/
+nbproject/*
+
