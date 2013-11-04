@@ -11,7 +11,7 @@ class SearchPhrasesController < ApplicationController
   def create
     @keyword = SearchPhrase.new(params[:search_phrase].permit(:keyword))
     if @keyword.save
-      UserMailer.welcome_email.deliver
+#      UserMailer.welcome_email.deliver
       redirect_to search_phrases_path
     else
       render 'new'

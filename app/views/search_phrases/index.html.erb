@@ -1,25 +1,31 @@
-<h1> Welcome, User </h1>
+<div class="span7">
+  <h2> Welcome, User </h2>
 
-<strong><%= link_to 'Add', new_search_phrase_path %></strong>
-
-<table border="1">
+  <strong><%= link_to 'Add Keyword', new_search_phrase_path %></strong>
 
   <% if !@keywords.empty? %>
-    <tr>
-      <td> Keyword </td>
-      <td> Options </td>
-    </tr>
-  <% end %>
-  
-  <% @keywords.each do |keyword| %>
-    <tr>
-      <td><%= keyword.keyword %></td>
-      <td>
-          <%= link_to ' Edit', edit_search_phrase_path(keyword) %> | 
-          <%= link_to 'Delete ', search_phrase_path(keyword),
-                    method: :delete, data: { confirm: 'Are you sure?' } %>
-      </td>
-    </tr>
-  <% end %>
+    <table class="table table-bordered">
 
-</table>
+      <thead>
+          <tr>
+            <td><h4> Keywords </h4></td>
+            <td><h4> Options  </h4></td>
+          </tr>
+      </thead>
+
+      <tbody>
+        <% @keywords.each do |keyword| %>
+          <tr>
+            <td><%= keyword.keyword %></td>
+            <td>
+                <%= link_to ' Edit', edit_search_phrase_path(keyword) %> | 
+                <%= link_to 'Delete ', search_phrase_path(keyword),
+                          method: :delete, data: { confirm: 'Are you sure?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+
+    </table>
+  <% end %>
+</div>

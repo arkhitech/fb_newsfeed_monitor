@@ -19,5 +19,6 @@ _yardoc
 doc/
 *~
 config/database.yml
-logs/*log
+log/*.log
+db/*.sqlite3
 nbproject/*
