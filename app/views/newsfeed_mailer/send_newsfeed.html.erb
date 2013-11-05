@@ -21,7 +21,7 @@
     <strong> Click on the posts to open the links </strong><br/><br/>
     <ul>
       <% @feed.each do |post| %>
-        <li><%= link_to post['message'], post['permalink'] %></li>
+        <li> <%= link_to post['message'], post['permalink'] %></li>
       <% end %>
     </ul>
 
