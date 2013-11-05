@@ -18,9 +18,13 @@
           <tr>
             <td><%= keyword.keyword %></td>
             <td>
-                <%= link_to ' Edit', edit_search_phrase_path(keyword) %> | 
-                <%= link_to 'Delete ', search_phrase_path(keyword),
-                          method: :delete, data: { confirm: 'Are you sure?' } %>
+                
+                <%= link_to content_tag(:i, "", class: "icon-pencil icon-white"),# + "Delete",
+                          edit_search_phrase_path(keyword), class: "btn btn-info active" %>
+                <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
+                          search_phrase_path(keyword), method: :delete, data: { confirm: 'Are you sure?' },
+                            class: "btn btn-danger remove_fields" %>
+                
             </td>
           </tr>
         <% end %>
