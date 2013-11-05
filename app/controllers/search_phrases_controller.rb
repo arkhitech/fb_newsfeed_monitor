@@ -1,7 +1,7 @@
 class SearchPhrasesController < ApplicationController
   
   def index
-    @keywords = SearchPhrase.all
+    @keywords = current_user.search_phrases.all
   end
   
   def new
@@ -9,7 +9,7 @@ class SearchPhrasesController < ApplicationController
   end
   
   def create
-    @keyword = SearchPhrase.new(params[:search_phrase].permit(:keyword))
+    @keyword = current_user.search_phrases.new(params[:search_phrase].permit(:keyword))
     if @keyword.save
 #      UserMailer.welcome_email.deliver
       redirect_to search_phrases_path

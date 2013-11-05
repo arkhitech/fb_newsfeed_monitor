@@ -6,6 +6,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'devise', '3.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
+gem "koala", "~> 1.8.0rc1"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 

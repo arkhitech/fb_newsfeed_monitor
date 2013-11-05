@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable,:omniauthable, 
          :omniauth_providers => [:facebook]
+       has_many :search_phrases
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
   
     puts "Auth received: #{auth.inspect}"
