@@ -1,6 +1,6 @@
 class NewsfeedMailer < ActionMailer::Base
   
-  default from: "info@noreply.com"
+  default from: "abuzar.hasan@arkhitech.com"
   
   def send_newsfeed(user, feed)
     @user = user

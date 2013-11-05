@@ -5,7 +5,6 @@ Newsfeed::Application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -26,4 +25,17 @@ Newsfeed::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = {
+    :user_name => 'hisham.mailk',
+    :password => 'testing1234',
+    :domain => 'arkhitech.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }  
 end

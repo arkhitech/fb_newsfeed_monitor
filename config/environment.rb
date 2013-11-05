@@ -5,9 +5,9 @@ require File.expand_path('../application', __FILE__)
 Newsfeed::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'hisham.mailk',
+  :user_name => 'hisham.malik',
   :password => 'testing1234',
-  :domain => 'arkhitech.com',
+  :domain => 'yourdomain.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
