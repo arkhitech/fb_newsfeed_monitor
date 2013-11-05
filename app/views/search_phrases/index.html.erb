@@ -1,5 +1,5 @@
 <div class="span7">
-  <h2> Welcome, User </h2>
+  <h2> <%="Welcome, #{current_user.name}" %></h2>
 
   <strong><%= link_to 'Add Keyword', new_search_phrase_path %></strong>
 

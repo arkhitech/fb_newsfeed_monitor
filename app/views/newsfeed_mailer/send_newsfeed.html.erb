@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    
+    <!-- here, 'User will be replaced by the current logged in user e.g. @user.id OR @user.name' -->
+    
+    <h1> <%= @user.name %> </h1>
+      
+    <strong> Result for Search Phrase(s) </strong>
+    <% search_phrases = @user.search_phrases.all %>
+    <% phrases = ' ' %>
+    <% search_phrases.each do |search_phrase| %>
+      <% phrases += search_phrase.keyword + ", " %>
+    <% end %>
+    <% phrases = phrases[0...phrases.length-2] %>
+    <%= phrases %>
+    
+    <br/><strong> Click on the posts to open the links </strong>
+    <% @feed.each do |post| %>
+      <%= link_to post['message'], post['permalink'] %> <br/>
+    <% end %>
+
+  </body>
+</html>
