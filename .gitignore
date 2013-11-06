@@ -22,3 +22,4 @@ config/database.yml
 log/*.log
 db/*.sqlite3
 nbproject/*
+/config/settings.yml

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Newsfeed</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="User_nav">
-    <%if user_signed_in?%>
-      signed in as <%=current_user.email%>.
-      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-    <%else%>
-    <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-    <%end%>
-  </div>
-<%= yield %>
+<html class="span7">
+  <head>
+    <title>Newsfeed</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="User_nav">
+      <%if user_signed_in?%>
+        signed in as <%=current_user.email%>.
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br/>
+      <%else%>
+        <div style="float: left;">
+          <%= link_to image_tag('http://takedesigns.com/wp-content/uploads/2013/02/social-facebook-box-blue.ico', size: '50'),
+            user_omniauth_authorize_path(:facebook) %>
+        </div>
+        <%= link_to "Sign in", user_omniauth_authorize_path(:facebook) %>
+      <%end%>
+    </div>
+    <%= yield %>
 
-  <br/><br/><%='Powered by '%> <%=  link_to 'Arkhitech', "http://arkhitech.com/" %>
-</body>
+    <br/><%='Powered by '%> <%=  link_to image_tag('http://www.arkhitech.com/sites/default/files/3348_logo.png', size: '50'), 
+      "http://arkhitech.com/" %>
+  </body>
 </html>

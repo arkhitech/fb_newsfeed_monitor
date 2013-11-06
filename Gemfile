@@ -8,6 +8,7 @@ gem 'devise', '3.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'mail', '2.5.4'
 gem "koala", "~> 1.8.0rc1"
+gem "whenever", ">= 0.8.4"
 
 # Use sqlite3 as the database for Active Record
 group :development do

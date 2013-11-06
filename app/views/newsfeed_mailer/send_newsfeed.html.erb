@@ -4,11 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    
+
     <!-- here, 'User will be replaced by the current logged in user e.g. @user.id OR @user.name' -->
-    
+
     <h1> Facebook Newsfeed Monitor </h1>
-      
+
     <strong> Result for Search Phrase(s) </strong> <br/><br/>
     <% search_phrases = @user.search_phrases.all %>
     <% phrases = ' ' %>
@@ -17,7 +17,7 @@
     <% end %>
     <% phrases = phrases[0...phrases.length-2] %>
     <%= phrases %><br/><br/>
-    
+
     <strong> Click on the posts to open the links </strong><br/><br/>
     <ul>
       <% @feed.each do |post| %>
