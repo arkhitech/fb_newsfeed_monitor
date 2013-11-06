@@ -13,7 +13,7 @@
         <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br/>
       <%else%>
         <div style="float: left;">
-          <%= link_to image_tag('http://takedesigns.com/wp-content/uploads/2013/02/social-facebook-box-blue.ico', size: '50'),
+          <%= link_to image_tag('http://takedesigns.com/wp-content/uploads/2013/02/social-facebook-box-blue.ico', size: '40'),
             user_omniauth_authorize_path(:facebook) %>
         </div>
         <%= link_to "Sign in", user_omniauth_authorize_path(:facebook) %>
@@ -21,7 +21,7 @@
     </div>
     <%= yield %>
 
-    <br/><%='Powered by '%> <%=  link_to image_tag('http://www.arkhitech.com/sites/default/files/3348_logo.png', size: '50'), 
+    <br/><%='Powered by '%> <%=  link_to image_tag('http://www.arkhitech.com/sites/default/files/3348_logo.png', size: '60'), 
       "http://arkhitech.com/" %>
   </body>
 </html>
