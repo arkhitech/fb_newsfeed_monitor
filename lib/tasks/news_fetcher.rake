@@ -2,7 +2,7 @@
 namespace :fb_newsfeed_reminder do
   task :fetch_news => :environment do
     users=User.all
-    since_time = Time.now - 30.minutes 
+    since_time = Time.now - 10.minutes 
     users.each do |user|
       begin
         graph = Koala::Facebook::API.new(user.fb_token)
