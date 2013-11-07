@@ -22,10 +22,10 @@
           <td>
 
             <%= link_to content_tag(:i, "", class: "icon-pencil icon-white"),# + "Delete",
-              edit_search_phrase_path(keyword), class: "btn btn-info" %>
-                <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
+                  edit_search_phrase_path(keyword), class: "btn btn-info" %>
+            <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
                   search_phrase_path(keyword), method: :delete, data: { confirm: 'Are you sure?' },
-                    class: "btn btn-danger remove_fields" %>
+                  class: "btn btn-danger remove_fields" %>
 
                   </td>
                 </tr>

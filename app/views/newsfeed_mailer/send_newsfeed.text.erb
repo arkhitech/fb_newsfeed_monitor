@@ -1,16 +1,14 @@
-<%= @user.name %>
+Facebook Newsfeed Monitor
 
 Result for Search Phrase(s)
 
-<% search_phrases = @user.search_phrases.all %>
-<% phrases = ' ' %>
-<% search_phrases.each do |search_phrase| %>
-  <% phrases += search_phrase.keyword + ", " %>
-<% end %>
-<% phrases = phrases[0...phrases.length-2] %>
-<%= phrases %>
-
 Click on the posts to open the links
-<% @feed.each do |post| %>
-  <%= post['message'] %> , <%= url_for post['permalink'] %> <br/>
-<% end %>
+
+<ul>
+  <% @feeds.each do |feed| %>
+    <li> <%=  highlight_feed(feed, @user.search_phrases) %>
+      <%= link_to 'Open', feed['permalink'] %>:
+
+    </li>
+  <% end %>
+</ul>
