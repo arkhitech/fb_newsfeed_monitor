@@ -9,19 +9,13 @@
   <body>
     <div id="User_nav">
       <%if user_signed_in?%>
-        signed in as <%=current_user.email%>.
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br/>
-      <%else%>
-        <div style="float: left;">
-          <%= link_to image_tag('http://takedesigns.com/wp-content/uploads/2013/02/social-facebook-box-blue.ico', size: '40'),
-            user_omniauth_authorize_path(:facebook) %>
-        </div>
-        <%= link_to "Sign in", user_omniauth_authorize_path(:facebook) %>
+        Signed in as: <strong><%=current_user.email%></strong>
+        <strong><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></strong> <br/>
       <%end%>
     </div>
-    <%= yield %>
-
-    <br/><%='Powered by '%> <%=  link_to image_tag('http://www.arkhitech.com/sites/default/files/3348_logo.png', size: '60'), 
+    <%= yield %><br/><br/>
+    <strong> Powered By </strong><br/>
+    <%=  link_to image_tag('http://www.arkhitech.com/sites/default/files/3348_logo.png', size: '60'), 
       "http://arkhitech.com/" %>
   </body>
 </html>
