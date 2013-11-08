@@ -1,9 +1,30 @@
+<script>
+  $(document).ready(function() {
+    $('#toggleKeywordAdd').click(function() {
+      $('#new_phrase').toggle();
+    });
+  });
+
+  function show_edit(id) {
+    var edit_div_id = '#edit-search-phrase-'.concat(id);
+
+    $(edit_div_id).toggle();
+  }
+</script>
+
 <div style="float: left;">
   <%= image_tag(current_user.image) %> 
 </div>
 <h2> <%= current_user.name %></h2>
 
-<strong><%= link_to 'Add Keyword', new_search_phrase_path %></strong>
+<div id='toggleKeywordAdd'>
+  <button class="btn btn-primary"><i class="icon-white icon-plus"></i> Add Keyword</button>
+</div><br/>
+
+<div id="new_phrase" style="display:none">
+  <%@keyword = SearchPhrase.new%>
+  <%= render :partial => 'new' %>
+</div>
 
 <% if !@keywords.empty? %>
   <table class="table table-bordered">
@@ -18,19 +39,20 @@
     <tbody>
       <% @keywords.each do |keyword| %>
         <tr>
-          <td><%= keyword.keyword %></td>
           <td>
-
-            <%= link_to content_tag(:i, "", class: "icon-pencil icon-white"),# + "Delete",
-                  edit_search_phrase_path(keyword), class: "btn btn-info" %>
+            <strong> <%= keyword.keyword %> </strong>         
+            <div id="edit-search-phrase-<%=keyword.id%>" style="display:none">
+              <%= render :partial => 'edit', :locals => {:search_phrase => keyword} %>
+            </div>
+          </td>
+          <td>
+            <button onclick="show_edit(<%=keyword.id%>);" class="btn btn-info"><i class="icon-pencil icon-white"></i></button>
             <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
                   search_phrase_path(keyword), method: :delete, data: { confirm: 'Are you sure?' },
                   class: "btn btn-danger remove_fields" %>
-
-                  </td>
-                </tr>
-              <% end %>
-            </tbody>
-
-          </table>
-        <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

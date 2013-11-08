@@ -4,10 +4,6 @@ class SearchPhrasesController < ApplicationController
     @keywords = current_user.search_phrases.all
   end
   
-  def new
-    @keyword = current_user.search_phrases.new
-  end
-  
   def create
     @keyword = current_user.search_phrases.new(params[:search_phrase].permit(:keyword))
     if @keyword.save
@@ -15,10 +11,6 @@ class SearchPhrasesController < ApplicationController
     else
       render 'new'
     end
-  end
-  
-  def edit
-    @keyword = current_user.search_phrases.find(params[:id])
   end
   
   def update
