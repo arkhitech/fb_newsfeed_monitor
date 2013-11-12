@@ -1,0 +1,55 @@
+var tableRef;
+tableRef = document.getElementById('search-phrase-index');
+if(!tableRef)
+{
+  window.location.reload();
+}
+
+// Insert a row in the table at row index 0
+var newRow   = tableRef.insertRow(-1);
+newRow.setAttribute('id', 'table-row-'+<%= @search_phrase.id %>);
+
+// Insert a cell in the row at index 0
+var cell1  = newRow.insertCell(0);
+var cell2  = newRow.insertCell(1);
+
+var row_div1 = document.createElement('div');
+row_div1.setAttribute('id', 'search-phrase-'+<%=@search_phrase.id%>);
+row_div1.innerHTML = '<strong><%=escape_javascript @search_phrase.keyword %></strong>';
+
+cell1.appendChild(row_div1);
+
+var row_div2 = document.createElement('div');
+row_div2.setAttribute('id', 'edit-search-phrase-'+<%=@search_phrase.id%>);
+row_div2.setAttribute('style', "display:none");
+row_div2.innerHTML = '<%= escape_javascript render :partial => 'edit', :locals => {:search_phrase => @search_phrase} %>';
+
+cell1.appendChild(row_div2);
+
+var button_edit = document.createElement('button');
+button_edit.setAttribute('id', 'button-edit-'+<%= @search_phrase.id %>);
+button_edit.setAttribute('class', 'btn btn-info');
+button_edit.innerHTML = '<i class="icon-pencil icon-white"></i>';
+
+cell2.appendChild(button_edit);
+
+var button_delete = document.createElement('a');
+button_delete.setAttribute('class', 'btn btn-danger remove_fields');
+button_delete.setAttribute('data-confirm', 'Are you sure?');
+button_delete.setAttribute('data-method', 'delete');
+button_delete.setAttribute('data-remote', 'true');
+button_delete.setAttribute('href', '/search_phrases/'+<%= @search_phrase.id %>);
+button_delete.setAttribute('rel', 'nofollow');
+button_delete.innerHTML = '<i class="icon-trash icon-white"></i>';
+cell2.appendChild(button_delete);
+
+$('#new_phrase').fadeOut();
+
+$('button').each(function () {
+    $(this).bind('click', function (event) {
+      var div_id = '#edit-search-phrase-'+<%=@search_phrase.id%>  
+      $(div_id).toggle();
+      //alert(div_id);
+    });
+});
+

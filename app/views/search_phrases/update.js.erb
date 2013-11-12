@@ -1,0 +1,7 @@
+var id = "search-phrase-"+<%= @search_phrase.id %>;
+rowRef = document.getElementById(id);
+
+$(rowRef).replaceWith("<div id='search-phrase-<%=@search_phrase.id%>'> <strong> <%= @search_phrase.keyword %> </strong> </div>");
+
+var edit_div_id = '#edit-search-phrase-'+<%= @search_phrase.id %>;
+$(edit_div_id).fadeOut();
