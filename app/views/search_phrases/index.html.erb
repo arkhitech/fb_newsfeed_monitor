@@ -1,7 +1,13 @@
 <script>
   $(document).ready(function() {
+    
     $('#toggleKeywordAdd').click(function() {
       $('#new_phrase').toggle();
+    });
+    
+    $("button[id^='button-edit']").click(function() {
+      //alert('Getting here: '+this.id.split('-')[2]);
+      show_edit(this.id.split('-')[2]);
     });
   });
 
@@ -10,6 +16,7 @@
 
     $(edit_div_id).toggle();
   }
+  
 </script>
 
 <div style="float: left;">
@@ -22,12 +29,12 @@
 </div><br/>
 
 <div id="new_phrase" style="display:none">
-  <%@keyword = SearchPhrase.new%>
+  <%@search_phrase = SearchPhrase.new%>
   <%= render :partial => 'new' %>
 </div>
-
-<% if !@keywords.empty? %>
-  <table class="table table-bordered">
+<div id="result-table">
+<% if !@search_phrases.empty? %>
+  <table id='search-phrase-index' class="table table-bordered">
 
     <thead>
       <tr>
@@ -37,22 +44,23 @@
     </thead>
 
     <tbody>
-      <% @keywords.each do |keyword| %>
-        <tr>
+      <% @search_phrases.each do |keyword| %>
+        <tr id='table-row-<%=keyword.id%>'>
           <td>
-            <strong> <%= keyword.keyword %> </strong>         
+            <div id='search-phrase-<%=keyword.id%>'> <strong> <%= keyword.keyword %> </strong> </div>
             <div id="edit-search-phrase-<%=keyword.id%>" style="display:none">
               <%= render :partial => 'edit', :locals => {:search_phrase => keyword} %>
             </div>
           </td>
           <td>
-            <button onclick="show_edit(<%=keyword.id%>);" class="btn btn-info"><i class="icon-pencil icon-white"></i></button>
-            <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
-                  search_phrase_path(keyword), method: :delete, data: { confirm: 'Are you sure?' },
+            <button id="button-edit-<%=keyword.id%>" class="btn btn-info"><i class="icon-pencil icon-white"></i></button>
+              <%= link_to content_tag(:i, "", class: "icon-trash icon-white"),# + "Delete",
+                search_phrase_path(keyword), method: :delete, data: { confirm: 'Are you sure?' }, remote: true,
                   class: "btn btn-danger remove_fields" %>
-          </td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-<% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+  <% end %>
+  </div>

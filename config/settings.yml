@@ -12,8 +12,8 @@
 #    enable_starttls_auto: true
 development:
   facebook:
-    app_key: '1378193182424903'
-    secret_token: '6a644a42435a5fc44bfa34c1e70460c8'
+    app_key: '363235593812809'
+    secret_token: '705938379c98fe466d507223c573c2a2'
   action_mailer_smtp_settings:
     user_name: 'hisham.malik'
     password: 'testing1234'
