@@ -25,10 +25,10 @@ class User < ActiveRecord::Base
     end
     user
   end
-  def self.fetch_feeds
+  def self.fetch_feeds(time)
     users=self.all
     logger.debug "Users to iterate over: #{users.size}"
-    since_time = Time.now - 10.minutes 
+    since_time = time 
     users.each do |user|
       user.match_feeds(since_time)
     end
