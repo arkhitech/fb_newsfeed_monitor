@@ -1,6 +1,6 @@
 class NewsfeedMailer < ActionMailer::Base
   
-  default from: "test@arkhitech.com"
+  default from: NewsfeedAppConfig[:default][:from_address]
   add_template_helper(NewsfeedMailerHelper)
   
   def send_newsfeed(user, feeds)

@@ -1,16 +1,8 @@
-# development:
-#  facebook:
-#    app_key: '522695187818535'
-#    secret_token: 'ab0df8696fbe5d3c10f00ca303eb5c7d'
-#  action_mailer_smtp_settings:
-#    user_name: 'test@arkhitech.com'
-#    password: 'ark41t3c4t35t'
-#    domain: 'arkhitech.com'
-#    address: 'smtp.gmail.com'
-#    port: 587
-#    authentication: :plain
-#    enable_starttls_auto: true
 development:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
   facebook:
     app_key: '363235593812809'
     secret_token: '705938379c98fe466d507223c573c2a2'
@@ -24,6 +16,10 @@ development:
     enable_starttls_auto: true
 
 production:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
   facebook:
     app_key: '522695187818535'
     secret_token: 'ab0df8696fbe5d3c10f00ca303eb5c7d'
