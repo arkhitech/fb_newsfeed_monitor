@@ -20,4 +20,6 @@ doc/
 *~
 config/database.yml
 db/*.sqlite3
-
+log/*.log
+nbproject/*
+config/settings.yml
