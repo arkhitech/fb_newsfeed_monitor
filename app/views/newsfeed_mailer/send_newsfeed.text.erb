@@ -1,0 +1,14 @@
+Facebook Newsfeed Monitor
+
+Result for Search Phrase(s)
+
+Click on the posts to open the links
+
+<ul>
+  <% @feeds.each do |feed| %>
+    <li> <%=  highlight_feed(feed, @user.search_phrases) %>
+      <%= link_to 'Open', feed['permalink'] %>:
+
+    </li>
+  <% end %>
+</ul>

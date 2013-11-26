@@ -1,11 +1,12 @@
 class NewsfeedMailer < ActionMailer::Base
   
-  default from: "from@example.com"
+  default from: NewsfeedAppConfig[:default][:from_address]
+  add_template_helper(NewsfeedMailerHelper)
   
-  def welcome_email
-#    @user = user
-#    @url  = 'http://example.com/login'
-    mail(to: 'abuzar.hasan@arkhitech.com', subject: 'Welcome to My Awesome Site')
+  def send_newsfeed(user, feeds)
+    @user = user
+    @feeds = feeds
+    mail(to: @user.email, subject: 'Newsfeed Monitor')
   end
   
 end

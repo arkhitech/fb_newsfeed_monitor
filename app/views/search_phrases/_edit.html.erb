@@ -1,0 +1,9 @@
+<%= form_for(search_phrase, remote: true) do |f| %>
+
+  <%= f.text_field :keyword %>
+
+  <%= f.submit "Update", class: "btn btn-medium btn-primary" %>
+
+  <%= render 'error' %>
+
+<% end %>

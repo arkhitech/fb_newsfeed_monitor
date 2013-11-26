@@ -1,0 +1,33 @@
+development:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
+  facebook:
+    app_key: facebook_app_key
+    secret_token: facebook_secret_token
+  action_mailer_smtp_settings:
+    user_name: 'username'
+    password: 'password'
+    domain: 'example.com'
+    address: 'yoursmtp.com'
+    port: 587
+    authentication: :plain
+    enable_starttls_auto: true
+
+production:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
+  facebook:
+    app_key: facebook_app_key
+    secret_token: facebook_secret_token
+  action_mailer_smtp_settings:
+    user_name: 'username'
+    password: 'password'
+    domain: 'example.com'
+    address: 'yoursmtp.com'
+    port: 587
+    authentication: :plain
+    enable_starttls_auto: true

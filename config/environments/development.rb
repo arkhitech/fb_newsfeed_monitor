@@ -5,7 +5,6 @@ Newsfeed::Application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -14,7 +13,7 @@ Newsfeed::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -26,4 +25,10 @@ Newsfeed::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  
+  config.action_mailer.default_url_options = NewsfeedAppConfig[:default][:url_options]
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = NewsfeedAppConfig[:action_mailer_smtp_settings]
+
 end

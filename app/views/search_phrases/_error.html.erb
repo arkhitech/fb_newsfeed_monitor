@@ -1,11 +1,11 @@
-<% if @keyword.errors.any? %>
+<% if @search_phrase.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-error">
-      
-      <% @keyword.errors.full_messages.each do |msg| %>
+
+      <% @search_phrase.errors.full_messages.each do |msg| %>
         <li> <%= msg %></li>
       <% end %>
-      
+
     </div>
   </div>
 <% end %>
