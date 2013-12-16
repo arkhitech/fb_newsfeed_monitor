@@ -12,8 +12,8 @@
 #    enable_starttls_auto: true
 development:
   facebook:
-    app_key: '363235593812809'
-    secret_token: '705938379c98fe466d507223c573c2a2'
+    app_key: '1412627235639386'
+    secret_token: '5be4a30e3e20081dfa579be9dd96cf91'
   action_mailer_smtp_settings:
     user_name: 'hisham.malik'
     password: 'testing1234'
@@ -25,8 +25,8 @@ development:
 
 production:
   facebook:
-    app_key: '522695187818535'
-    secret_token: 'ab0df8696fbe5d3c10f00ca303eb5c7d'
+    app_key: '1412627235639386'
+    secret_token: '5be4a30e3e20081dfa579be9dd96cf91'
   action_mailer_smtp_settings:
     user_name: 'hisham.malik'
     password: 'testing1234'
