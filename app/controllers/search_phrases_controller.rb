@@ -6,6 +6,7 @@ class SearchPhrasesController < ApplicationController
   
   def create       
     @search_phrase = current_user.search_phrases.new(params[:search_phrase].permit(:keyword))
+#     @search_phrase = current_user.search_phrases.new(params[:keyword]) #Changed by Me
     
     respond_to do |format|
       if @search_phrase.save
