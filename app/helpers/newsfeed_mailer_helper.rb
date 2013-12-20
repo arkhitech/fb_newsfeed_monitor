@@ -7,6 +7,7 @@ module NewsfeedMailerHelper
     end    
     phrases.join(', ')
   end    
+  
   def highlight_feed(feed, search_phrases)
     highlight(feed['message'], search_phrases.collect{|sp|sp.keyword}, 
                highlighter: '<span style="background-color: #FFFF00">\1</span>')    

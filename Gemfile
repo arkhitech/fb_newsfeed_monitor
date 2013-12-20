@@ -25,6 +25,12 @@ group :development do
   gem 'sqlite3'
 end
 
+group :testing do
+  gem 'sqlite3'
+  gem "shoulda", "~> 3.3.2"
+  gem "mocha", ">= 0.14", :require => 'mocha/api'
+end
+
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
