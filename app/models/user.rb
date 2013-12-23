@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable,:omniauthable, 
     :omniauth_providers => [:facebook]
   has_many :search_phrases, dependent: :destroy
+  
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
   
     puts "Auth received: #{auth.inspect}"
