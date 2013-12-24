@@ -4,8 +4,8 @@ describe SearchPhrasesController do
   
   render_views
   include Devise::TestHelpers
-  #  User.destroy_all
-  #  SearchPhrase.destroy_all
+    User.destroy_all
+    SearchPhrase.destroy_all
   
   
   before :all do
@@ -49,77 +49,59 @@ describe SearchPhrasesController do
     end
     
     it "renders Index page with user signed in" do
-      #     search_phrase1, search_phrase2 = SearchPhrase.create!, SearchPhrase.create!
-   
+      #     search_phrase1, search_phrase2 = SearchPhrase.create!, SearchPhrase.create! 
       get :index
       #     expect(assigns(:search_phrase)).to match_array([search_phrase1, search_phrase2])
       expect(assigns(:search_phrases)).to match_array([@search_phrases])
     end
-     
 
-    
   end
   
   
-  # PERMIT ISSUE
   describe "POST #create" do
     
     
-    #    it "CREATE should redirect to 'index' with a notice on successful save" do
-    #         params = ActionController::Parameters.new(@search_phrases)
-    #         post :create ,:search_phrases => { :params => params }
-    #         response.should redirect_to(search_phrases_path)
-    #    end
-    #    
-    #      it "CREATE should pass params to search phrases" do
-    #      post 'create', :search_phrases => { :keyword => 'newkeyword' }
-    #      assigns[:search_phrases ].keyword.should == 'newkeyword'
-    #      end
-    #    
+    it " should redirect to 'index' with a notice on successful save" do
+      post :create ,search_phrase: {keyword: 'testkeywordnew'}
+      response.should redirect_to(search_phrases_path)
+    end
+        
+    it "should pass params to search phrases" do
+      post :create ,search_phrase: {keyword: 'testkeywordnew'}
+      assigns[:search_phrase].keyword.should == 'testkeywordnew'
+    end
+        
   end  
   
   
   describe "PUT #update" do
     
     
-    it "update responds with success if the controller is invoked" do
-      
-      
-      #      SearchPhrase.stub(:permit).and_return(@search_phrases)
-#      params = ActionController::Parameters.new(search_phrase: {:keyword =>'testkeyword'})
-#      #      search_phrase_params=SearchPhrasesController::SearchPhraseParams.build(params)
-#      #      params.require('testkeyword').permit!
-#      params.require(:search_phrase).permit(:keyword)
-#      #      SearchPhrase.stub(:permit).and_return(:keyword)
-#      #      SearchPhrase.should_receive(:update).with
-#      #                    ({keyword: 'testkeyword'}.with_indifferent_access)     
-#      expect(params).to eq({search_phrase: {:keyword =>'testkeyword'}}.with_indifferent_access)
+    it " should respond with success if the controller is invoked" do
 
-      put 'update', :id => @search_phrases.id, search_phrase: {keyword: 'testkeyword'}
+      put :update, :id => @search_phrases.id, search_phrase: {keyword: 'testkeyword'}
       
       params = ActionController::Parameters.new(search_phrase: {:keyword =>'testkeyword'})
       expect(params).to eq({search_phrase: {:keyword =>'testkeyword'}}.with_indifferent_access)
-      response.should be_success
+      puts "#{response.status}"
+      expect(response.status).to eq(302)
+
 
     end
         
-        it "should update search_phrases attributes" do
-          put :update, :id => @search_phrases.id, search_phrase: {keyword: 'testkeyword'}
-          @search_phrases.update_attributes(keyword: "testkeywordUpdate")
-#          @time_invoice.reload
-          @search_phrases.keyword.should eq("testkeywordUpdate")
-        end
-    #
-    #    it "should redirect to index after successful updation" do
-    #      get 'update', :id => @search_phrases.id
-    #      response.should redirect_to(@search_phrases)        
-    #    end
-    #----------------------------------------~|above
+    it "should update search_phrases attributes" do
+      put :update, :id => @search_phrases.id, search_phrase: {keyword: 'testkeyword'}
+      @search_phrases.update_attributes(keyword: "testkeywordUpdate")
+      @search_phrases.keyword.should eq("testkeywordUpdate")
+    end
     
-    #    it "renders Index page with user signed in" do
-    #      get :update
-    #      expect(response).to render_template("update")
-    #    end
+        it "should redirect to index after successful updation" do
+           put :update, :id => @search_phrases.id, search_phrase: {keyword: 'testkeyword'}
+           @search_phrases.update_attributes(keyword: "testkeywordUpdate")
+          response.should redirect_to(search_phrases_path)        
+        end
+
+   
     
   end
   
@@ -128,11 +110,19 @@ describe SearchPhrasesController do
     
     #check how to delete single
     it "destroy responds with success if the controller is invoked" do
-      delete :destroy, :id => @search_phrases.id, :user_id => @user.id
-      #      SearchPhrase.destroy(:user_id => @user.id)
+      puts "*#{SearchPhrase.first.to_yaml}"
+      delete :destroy, :id => @search_phrases.id
       SearchPhrase.destroy_all
       response.should redirect_to(search_phrases_path)  
     end
+    
+    
+    it "destroy responds with success if destroy method called" do
+      puts "*#{SearchPhrase.first.to_yaml}"
+      SearchPhrase.destroy(@search_phrases.id)
+      expect(response.status).to eq(200)  
+    end
+    
     
   end
   
