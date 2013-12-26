@@ -1,5 +1,9 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
+require "spec_helper"
 
-puts "Hello World"
+describe "users/welcome.html.erb" do
+  
+  it "should render to partial 'layouts/login_page'" do
+    view.stub(:render).with(hash_including(:partial => "formlayouts/login_page"))
+  end  
+  
+end

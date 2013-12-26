@@ -3,6 +3,7 @@ require 'spec_helper'
 class ValidatingWidget < ActiveRecord::Base
   self.table_name = :search_phrases
   validates_presence_of :keyword, :user_id
+  validates_uniqueness_of :keyword, :scope => :user_id
 end
 
 describe SearchPhrase do
@@ -26,24 +27,28 @@ describe SearchPhrase do
   end
   
   
-  describe "when key word is duplicated should give error" do
+  describe "when key word is duplicated for same user" do
     before {
       @search_phrase2=SearchPhrase.new(keyword: "testkeyword",user_id: @search_phrase.user_id) #never hard code
+      @search_phrase2.save
     }
-    it {
-      should be_valid
-    }
+    it "Should fail validation" do
+      expect(ValidatingWidget.new(keyword: "testkeyword",user_id: @search_phrase.user_id)).
+                                                  to have(1).errors_on(:keyword)
+    end
 
   end
   
   describe "when key word is duplicated for different user, it should validate" do
     before {
       @search_phrase3=SearchPhrase.new(keyword: "testkeyword",user_id: 2) #never hard code
-      @search_phrase3.save!
+      @search_phrase3.save
+      
+      puts "**************-->#{SearchPhrase.all.to_yaml}"
     }
         
     it "passes validation with same keyword used for different user" do
-      expect(ValidatingWidget.new(:keyword => "testkeyword",:user_id => 2)).
+      expect(ValidatingWidget.new(keyword: "testkeyword",user_id: 3)).
         to have(0).errors_on(:keyword)
     end
   end

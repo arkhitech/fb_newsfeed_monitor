@@ -10,4 +10,5 @@ FactoryGirl.define do
     user.name "testuserformodel"
     user.fb_token "AUExuiUkFoBAEsYdxTfU1ONYanI55Sx5ThBTjo7qnKLiZ"
   end
+ 
 end
