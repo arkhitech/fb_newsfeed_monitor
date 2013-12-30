@@ -32,6 +32,7 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
     config.include Devise::TestHelpers, :type => :controller
+#    config.include(OmniauthMacros) 
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
@@ -60,3 +61,4 @@ RSpec.configure do |config|
   config.order = "random"
   config.include Capybara::DSL
 end
+OmniAuth.config.test_mode = true
