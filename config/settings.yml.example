@@ -1,4 +1,8 @@
 development:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
   facebook:
     app_key: facebook_app_key
     secret_token: facebook_secret_token
@@ -12,6 +16,10 @@ development:
     enable_starttls_auto: true
 
 production:
+  default:
+    from_address: 'info@arkhitech.com'
+    url_options:
+      host: 'localhost:3000'
   facebook:
     app_key: facebook_app_key
     secret_token: facebook_secret_token
