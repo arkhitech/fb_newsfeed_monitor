@@ -10,6 +10,7 @@ gem 'mail', '2.5.4'
 gem "koala", "~> 1.8.0rc1"
 gem "whenever", ">= 0.8.4"
 
+#testing
 gem 'rspec-rails', '>= 2.13.1'
 gem "capybara", "~> 2.1.0"
 gem "selenium-webdriver"
@@ -20,7 +21,20 @@ gem 'guard-spork', '1.5.0'
 gem 'childprocess', '0.3.6'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :testing do
+  gem 'sqlite3'
+  gem "shoulda", "~> 3.3.2"
+  gem "mocha", ">= 0.14", :require => 'mocha/api'
+end
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -32,7 +46,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- gem 'therubyracer', platforms: :ruby
+ #gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

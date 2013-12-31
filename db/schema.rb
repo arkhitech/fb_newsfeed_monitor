@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131104082038) do
+ActiveRecord::Schema.define(version: 20131106104017) do
 
   create_table "search_phrases", force: true do |t|
     t.string   "keyword"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20131104082038) do
     t.string   "uid"
     t.string   "name"
     t.text     "fb_token"
+    t.text     "image"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
