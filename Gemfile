@@ -21,12 +21,11 @@ gem 'guard-spork', '1.5.0'
 gem 'childprocess', '0.3.6'
 
 # Use sqlite3 as the database for Active Record
-group :development do
+group :development, :testing do
   gem 'sqlite3'
 end
 
 group :testing do
-  gem 'sqlite3'
   gem "shoulda", "~> 3.3.2"
   gem "mocha", ">= 0.14", :require => 'mocha/api'
 end

@@ -6,5 +6,6 @@ namespace :fb_newsfeed_reminder do
     logger.info 'Starting to fetch_news'
     
     User.fetch_feeds(since_time)
+    #User.fetch_twitter_feeds
   end
 end
