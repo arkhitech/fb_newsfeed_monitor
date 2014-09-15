@@ -1,0 +1,30 @@
+
+<%= "Welcome to your twitter feed search!" %><br><br>
+
+
+<%= form_tag controller: 'tweet', action: 'tweet_search' do %>
+
+<p>
+<%= "Enter your search word here:" %><br>
+  <%= text_field_tag :twitter_search_word %>
+</p>
+
+<p>
+  <%= submit_tag "Search" %>
+</p>
+
+<% end %>
+
+<% i = 0 %>
+
+<%  @twitter_search_result.each do |result| %>
+  
+  <%= i+=1 %>
+  <%= "-\t" %>
+  
+  <%= result.tweeter_name %>
+  <%= ":\t" %>
+  <%= result.tweet_text %><br>
+  <%= link_to result.tweet_link, result.tweet_link %>
+  
+<%  end %>

@@ -72,3 +72,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'omniauth-twitter'
+gem 'omniauth-linkedin'
+
+gem 'oauth'
+gem 'json'
+gem 'twitter'
+gem 'grackle'
+
+gem 'linkedin'
+
+gem 'thinking-sphinx', "~> 3.1.1"
+
+gem 'mysql2'

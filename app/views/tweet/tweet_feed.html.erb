@@ -1,0 +1,9 @@
+<% i = 0 %>
+<% @tweet.each do |friend| %>
+  <%= i+=1 %>
+  <%= "-\t" %>
+  <%= friend["user"]["name"] %>
+  <%= ":\t" %>
+  <%= friend["text"] %><br>
+  <%= link_to "https://twitter.com/#{friend["user"]["screen_name"]}/status/#{friend["id_str"]}", "https://twitter.com/#{friend["user"]["screen_name"]}/status/#{friend["id_str"]}" %><br><br><br>
+<% end %>

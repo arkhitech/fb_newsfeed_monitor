@@ -22,7 +22,7 @@ describe SearchPhrasesController do
   end
   
   before  :each do
-    User.stub(:find_for_facebook_oauth).and_return(@user)
+    User.stub(:find_for_oauth).and_return(@user)
     sign_in @user
   end
   

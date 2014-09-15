@@ -1,0 +1,35 @@
+
+<%= "Welcome to your linkedin network updates search!" %><br><br>
+
+
+<%= form_tag controller: 'linkedin', action: 'li_search' do %>
+
+<p>
+<%= "Enter your search word here:" %><br>
+  <%= text_field_tag :li_search_word %>
+</p>
+
+<p>
+  <%= submit_tag "Search" %>
+</p>
+
+<% end %>
+
+<% i = 0 %>
+
+<%  @li_search_result.each do |result| %>
+
+  <%= i+=1 %>
+  <%= "-\t" %>
+  <%= result.li_updater_first_name %>
+
+  <%= result.li_updater_last_name%><br>
+  
+  <%= result.li_updater_headline%><br>
+  
+  <%= result.li_update_title %><br>
+   
+  <%= link_to  result.li_update_shortened_url, result.li_update_shortened_url %><br><br>
+ 
+  
+<%  end %>

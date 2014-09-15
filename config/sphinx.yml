@@ -1,0 +1,13 @@
+development:
+
+  morphology: stem_en
+  port: 9310
+
+
+test:
+  port: 9310
+  morphology: stem_en
+
+production:
+  port: 9310
+  morphology: stem_en

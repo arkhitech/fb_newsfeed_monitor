@@ -1,0 +1,35 @@
+
+<%  for i in 0..((@update_SHAR["values"].length)-1) %>
+
+  <%= i+1 %>
+  <%= "-\t" %>
+ <% if  @update_SHAR["values"][i]["updateContent"]["person"]["firstName"]%>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["firstName"] %>
+  <%  end %>
+
+ <% if  @update_SHAR["values"][i]["updateContent"]["person"]["lastName"]%>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["lastName"]%><br>
+  <%  end %>
+  
+ <% if  @update_SHAR["values"][i]["updateContent"]["person"]["headline"]%>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["headline"]%><br>
+  <%  end %>
+  
+ <% if  @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"]%>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"]["title"] %><br>
+  <%  end %>
+  
+  <% if  @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["comment"] %>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["comment"] %><br>
+  <% end %>
+  
+  <%  if  @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"] %>
+  <%= @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"]["description"] %><br>
+  <% end %>
+  
+  
+  <% if  @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"] %>
+  <%= link_to  @update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"]["shortenedUrl"],@update_SHAR["values"][i]["updateContent"]["person"]["currentShare"]["content"]["shortenedUrl"] %><br><br>
+  <% end %>
+  
+<%  end %>

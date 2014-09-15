@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131106104017) do
+ActiveRecord::Schema.define(version: 20140903055209) do
+
+  create_table "identities", force: true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "access_token"
+    t.string   "access_secret"
+  end
+
+  create_table "linkedins", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "li_updater_first_name"
+    t.string   "li_updater_last_name"
+    t.string   "li_updater_headline"
+    t.string   "li_update_title"
+    t.string   "li_update_shortened_url"
+    t.string   "li_user_id"
+  end
 
   create_table "search_phrases", force: true do |t|
     t.string   "keyword"
@@ -21,6 +42,15 @@ ActiveRecord::Schema.define(version: 20131106104017) do
   end
 
   add_index "search_phrases", ["user_id"], name: "index_search_phrases_on_user_id"
+
+  create_table "tweets", force: true do |t|
+    t.string   "tweet_text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "twitter_user_id"
+    t.string   "tweet_link"
+    t.string   "tweeter_name"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -33,13 +63,13 @@ ActiveRecord::Schema.define(version: 20131106104017) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "provider"
-    t.string   "uid"
     t.string   "name"
-    t.text     "fb_token"
-    t.text     "image"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

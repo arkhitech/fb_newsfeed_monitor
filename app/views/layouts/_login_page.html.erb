@@ -1,6 +1,8 @@
 <h4>Welcome to Facebook Newsfeed Monitor</h4><br/>
 <div style="float: left;">
   <%= link_to image_tag('facebook.ico', size: '50'),
-    user_omniauth_authorize_path(:facebook) %>
-</div>
-<h1><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></h1>
+    user_omniauth_authorize_path(:facebook) %><br/>
+</div><br/><br/>
+<h1><%= link_to "Sign in with Facebook", 'users/auth/facebook' %></h1>
+<h1><%= link_to "Sign in with Twitter", 'users/auth/twitter' %></h1>
+<h1><%= link_to "Sign in with Linked in", 'users/auth/linkedin' %></h1>
